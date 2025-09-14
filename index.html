@@ -3,40 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โปรแรง! SBO Sports โบนัส 100%</title>
+    <title>โปรแรง! รับโบนัสกีฬา SBO Sports สูงสุด 6,600 บาท</title>
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX'); // <--- แก้ G-XXXXXXXXXX เป็น ID ของคุณ
-    </script>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "YOUR_ONESIGNAL_APP_ID", // <--- แก้ YOUR_ONESIGNAL_APP_ID เป็น ID ของคุณ
-        });
-      });
-    </script>
-    <link rel="stylesheet" href="style.css"> </head>
-<body>
-    <a href="ใส่-ลิงก์-Affiliate-ของคุณ-ที่นี่" class="cta-button">ขอรับสิทธิ์โบนัส 6,600 บาทของฉัน!</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const ctaButtons = document.querySelectorAll('a.cta-button');
-        ctaButtons.forEach(button => {
-          button.addEventListener('click', function() {
-            gtag('event', 'affiliate_click', {
-              'event_category': 'Affiliate Link',
-              'event_label': button.href
-            });
-          });
-        });
-      });
-    </script>
+    <style>
+        /* --- CSS Styling --- */
+        :root {
+            --dark-blue-bg: #101d2e;
+            --container-blue: #192a45;
+            --highlight-gold: #f0c45c;
+            --button-red-start: #f54256;
+            --button-red-end: #d82b3e;
+            --text-primary: #ffffff;
+            --text-secondary: #c0d0e8;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: var(--dark-blue-bg);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 25px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            background: var(--container-blue);
+            max-width: 550px;
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .content-padding {
+            padding: 10px 30px 30px 30px;
+        }
+
+        .special-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--highlight-gold);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 1em;
+            margin-bottom: 20px;
+            border: 1px solid var(--highlight-gold);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin: 0 0 15px 0;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        h1 span.highlight {
+            color: var(--highlight-gold);
+        }
+
+        p.subtitle {
+            font-size: 1.1em;
+            color: var(--text-secondary);
+            margin: 0 0 25px 0;
+            line-height: 1.6;
+        }
+        
+        .countdown-container {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            padding: 15px;
+            margin: 25px 0;
+        }
+        
+        .countdown-container p {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        #countdown-timer {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--highlight-gold);
+            letter-spacing: 2px;
+        }
+
+        .cta-button {
+            width: 100%;
+            background: linear-gradient(180deg, var(--button-red-start), var(--button-red-end));
+            color: var(--text-primary);
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 1.4em;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(245, 66, 86, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(245, 66, 86, 0.5);
+        }
+
+        .steps-container h2 {
+            font-size: 1.5em;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+
+        .steps-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .step-card {
+            background: rgba(0, 0, 0, 0.2);
+            flex: 1;
+            padding: 20px 10px;
+            border-radius: 15px;
+        }
+
+        .step-number {
+            background: var(--highlight-gold);
+            color: var(--dark-blue-bg);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6em;
+            font-weight: 700;
+            margin: 0 auto 15px;
+        }
+
+        .terms-card {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .terms-card h2 {
+             margin-top: 0;
+        }
+
+        .calculation-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px 20px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        
+        .calculation-grid span {
+            color: var(--text-secondary);
+        }
+        
+        .calculation-grid strong {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        hr.divider {
+            grid-column: 1 / -1;
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 5px 0;
+        }
+        
+        .final-turnover {
+            grid-column: 1 / -1;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .final-turnover strong {
+            color: var(--highlight-gold);
+            font-size: 1.2em;
+        }
+
+        .footer-text {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <img src="Soccer_player_celebrating_goal.webp" alt="นักฟุตบอลดีใจ" class="hero-image">
+        
+        <div class="content-padding">
+            <div class="special-badge">ข้อเสนอมีเวลาจำกัด</div>
+            
+            <h1>เพิ่มทุนเดิมพันฟรี <span class="highlight">100% สูงสุด 6,600 บาท</span></h1>
+            
+            <p class="subtitle">โปรแรงแซงทุกดีลสำหรับสมาชิกใหม่ SBO Sports ที่ W88 เท่านั้น! ฝากเงินวันนี้ รับโบนัสเพิ่มทันที</p>
+
+            <div class="countdown-container">
+                <p>สิทธิ์รับโบนัสพิเศษนี้จะสิ้นสุดใน:</p>
+                <div id="countdown-timer"></div>
+            </div>
+            <a href="https://affiliate.w88bkk.com/Track/2712/17822/98" class="cta-button">ปลดล็อกโบนัส 6,600 ทันที</a>
+
+            <div class="steps-container">
+                <h2>เริ่มต้นความมันส์ใน 3 คลิก:</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <span>สมัครฟรีใน 1 นาที</span>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <span>ฝากเงินเริ่มต้นแค่ 260.-</span>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <span>รับทุนเพิ่มทันที!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="terms-card">
+                <h2>ตัวอย่างการคำนวณยอดเทิร์นโอเวอร์</h2>
+                <div class="calculation-grid">
+                    <span>ฝากเงิน:</span>
+                    <strong>260 บาท</strong>
+                    
+                    <span>รับโบนัส 100%:</span>
+                    <strong>260 บาท</strong>
+                    
+                    <hr class="divider">
+                    <hr class="divider">
+
+                    <span>ทุนรวมทั้งหมด:</span>
+                    <strong>520 บาท</strong>
+
+                    <div class="final-turnover">
+                        <span>ยอดเดิมพันหมุนเวียนที่ต้องทำ:</span><br>
+                        <strong>(260 + 260) x 15 เท่า = 7,800 บาท</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://affiliate.w88bkk.com/Track/2712/17822/98" class="cta-button">สมัครสมาชิกและรับโบนัสเลย</a>
+
+            <p class="footer-text">W88 บริการปลอดภัย ฝาก-ถอนรวดเร็ว พร้อมทีมงานดูแล 24 ชั่วโมง</p>
+        </div>
+    </div>
+
+<script>
+    // --- Countdown Timer Script (Optimized for Instant Load) ---
+    (function() {
+        const countdownElement = document.getElementById('countdown-timer');
+        if (!countdownElement) return;
+
+        // 1. สร้างฟังก์ชันสำหรับอัปเดตเวลาโดยเฉพาะ
+        function updateTimer() {
+            const now = new Date();
+            const utcOffset = now.getTimezoneOffset() * 60000;
+            const thaiOffset = 7 * 3600000;
+            const nowInThailand = new Date(now.getTime() + utcOffset + thaiOffset);
+
+            let targetTime = new Date(nowInThailand);
+            targetTime.setHours(2, 0, 0, 0); 
+
+            if (nowInThailand.getTime() > targetTime.getTime()) {
+                targetTime.setDate(targetTime.getDate() + 1);
+            }
+
+            const distance = targetTime.getTime() - nowInThailand.getTime();
+
+            if (distance < 0) {
+                countdownElement.innerHTML = "00:00:00";
+                return; // หยุดการทำงานถ้ามีข้อผิดพลาด
+            }
+
+            const hours = Math.floor(distance / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const fHours = hours < 10 ? "0" + hours : hours;
+            const fMinutes = minutes < 10 ? "0" + minutes : minutes;
+            const fSeconds = seconds < 10 ? "0" + seconds : seconds;
+
+            countdownElement.innerHTML = `${fHours}:${fMinutes}:${fSeconds}`;
+        }
+
+        // 2. เรียกใช้ฟังก์ชันนี้ "ทันที" 1 ครั้ง เพื่อแสดงผลโดยไม่ดีเลย์
+        updateTimer();
+
+        // 3. จากนั้นค่อยสั่งให้มันทำงานซ้ำทุกๆ 1 วินาที
+        setInterval(updateTimer, 1000);
+
+    })();
+</script>
+
 </body>
 </html>
