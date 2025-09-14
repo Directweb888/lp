@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแรง! SBO Sports โบนัส 100%</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX'); // <--- แก้ G-XXXXXXXXXX เป็น ID ของคุณ
+    </script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "YOUR_ONESIGNAL_APP_ID", // <--- แก้ YOUR_ONESIGNAL_APP_ID เป็น ID ของคุณ
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <a href="ใส่-ลิงก์-Affiliate-ของคุณ-ที่นี่" class="cta-button">ขอรับสิทธิ์โบนัส 6,600 บาทของฉัน!</a>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const ctaButtons = document.querySelectorAll('a.cta-button');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'affiliate_click', {
+              'event_category': 'Affiliate Link',
+              'event_label': button.href
+            });
+          });
+        });
+      });
+    </script>
+</body>
+</html>
